@@ -183,20 +183,76 @@ res_percapita = percapita1 > percapita2;
     printf("5 - Densidade Populacional\n");
     
     printf("6 - Renda Per Capita\n");
+
+    printf("0 - Encerrar\n");
     
     scanf("%d", &escolha_menu);
-
+while (1)
+{
     switch(escolha_menu) {
 
         case 1:
             if(populacao1 > populacao2) {
-                printf("A carta 1 venceu")
+                printf("A carta 1 venceu\n");
+            }else if(populacao1 < populacao2) {
+                printf("A carta 2 venceu\n");
+            }else {
+                printf("Empate");
+            }
+        break;
         
+        case 2:
+            if(area1 > area2) {
+                printf("A carta 1 venceu\n");
+            }else if (area1 < area2) {
+                printf("A carta 2 venceu\n");
+            }else {
+                printf("Empate");
+            }
+        break;
+
+        case 3:
+            if(pib1 > pib2) {
+                printf("A carta 1 venceu\n");
+            }else if (pib1 < pib2) {
+                printf("A carta 2 venceu\n");
+            }else {
+                printf("Empate");
+            }
+        break;
+        
+        case 4:
+            if (pontos_turisticos1 > pontos_turisticos2) {
+                printf("A carta 1 venceu\n");
+            }else if (pontos_turisticos1 < pontos_turisticos2) {
+                printf("A carta 2 venceu\n");
+            }else {
+                printf("Empate");
+            }
+        break;
+        
+        case 5:
+            if (densidade1 > densidade2) {
+                printf("A carta 1 venceu\n");
+            }else if (densidade1 < densidade2) {
+                printf("A carta 2 venceu\n");
+            }else {
+                printf("Empate");
+            }
+        break;
+        
+        case 6:
+            if(percapita1 > percapita2) {
+                printf("A carta 1 venceu\n");
+            }else if (percapita1 < percapita2) {
+                printf("A carta 2 venceu\n");
+            }else {
+                printf("Empate");
+            }
+        break;
+
+        case 0:
+            return 0;
+        break;
     }
-            
-            
-            printf("Carta 1: %d - Carta 2: %d\n", pontuacao1, pontuacao2);
-             }
-    }
-return 0;
 }
