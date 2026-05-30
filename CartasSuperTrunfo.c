@@ -186,16 +186,13 @@ res_percapita = percapita1 > percapita2;
     
     scanf("%d", &escolha_menu);
 
-    if(escolha_menu == 1){
+    switch(escolha_menu) {
+
+        case 1:
+            if(populacao1 > populacao2) {
+                printf("A carta 1 venceu")
         
-        if(populacao1 > populacao2){
-            
-            printf("A carta 1 venceu\n");
-            
-            printf("Carta 1: %d - Carta 2: %d\n", pontuacao1, pontuacao2);
-            
-        }else{
-            printf("A carta 2 venceu\n");
+    }
             
             
             printf("Carta 1: %d - Carta 2: %d\n", pontuacao1, pontuacao2);
